@@ -1,0 +1,19 @@
+
+:root {
+    --color-1: #7e7766;
+    --color-2: #c2b8a3;
+    --color-3: #e6ddc6;
+    --color-4: #fef7dc;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .App {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--color-1);
+    background-color: var(--color-4);
+    min-height: 100vh;
+  }
+  
