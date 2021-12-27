@@ -17,7 +17,7 @@ class Products extends Component {
             return(
                 <div className='product' key={obj.title}>
                 <div  className='product_item' >
-                        <img src={obj.imgUrl}/>
+                        <img src={obj.imgUrl} alt={obj.title}/>
                         <h4>{obj.title}</h4>
                        <p>{obj.description}</p>
                         <p>{obj.price}</p>   

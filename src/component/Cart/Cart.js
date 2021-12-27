@@ -6,7 +6,7 @@ import './Cart.css'
       return this.props.cart.map((item, index) => {
         return (
           <div className="cart_details">
-            <img src={item.imgUrl} alt={item.title}/>
+            <img src={item.imgUrl} alt={item.title }/>
             <div className="title">
               <p>{item.title}</p>
               <div>
