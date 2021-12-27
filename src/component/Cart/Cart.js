@@ -5,11 +5,11 @@ import './Cart.css'
      renderItems = () => {
       return this.props.cart.map((item, index) => {
         return (
-          <div key={item.id} className="cart_details">
+          <div className="cart_details">
             <img src={item.imgUrl}/>
             <div className="title">
               <p>{item.title}</p>
-              <div className="">
+              <div>
                 <button onClick={() => this.props.increaseAmout(index)}>+</button>
                 Quantity: {item.quantity}
                 <button onClick={() => this.props.deacreseAmout(index)}>  <i className="fas fa-chevron-down"></i></button>

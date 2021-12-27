@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import './Navbar.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Navbar extends Component {
     
     
@@ -13,11 +13,11 @@ class Navbar extends Component {
                 </div>
                 <div className='navbar'>
                 <div className='home'>
-                <Link className='Links' to="/">Home</Link> 
+                <Link to="/Homepage">Home</Link> 
                 <Link to="/products">Products</Link>
                 
                 <div className='cart-container'>
-                <Link to="/cart"><span>{this.props.cart}</span><i class="far fa-shopping-cart"></i></Link>  
+                <Link to="/cart"><span>{this.props.cart}</span></Link>  
                 </div>
                 </div> 
             </div>

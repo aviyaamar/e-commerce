@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import productApi from './api'
+import productApi from '../api'
 import './products.css'
 
 
@@ -15,8 +15,8 @@ class Products extends Component {
         const {data} = this.state
         return data.map((obj)=>{
             return(
-                <div className='product'>
-                <div  className='product_item' key={obj.id}>
+                <div className='product' key={obj.title}>
+                <div  className='product_item' >
                         <img src={obj.imgUrl}/>
                         <h4>{obj.title}</h4>
                        <p>{obj.description}</p>

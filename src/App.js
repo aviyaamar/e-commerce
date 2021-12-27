@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css"
 import { BrowserRouter, Route } from "react-router-dom";
-import Navbar from "./component/Navbar";
-import Homepage from "./component/Homepage";
-import Products from "./component/Products";
-import Cart from "./component/Cart";
+import Navbar from "./component/Navbar/Navbar";
+import Homepage from "./component/Homepage.js";
+import Products from "./component/products/Products";
+import Cart from "./component/Cart/Cart";
 
 
 class App extends React.Component{
@@ -42,7 +42,7 @@ class App extends React.Component{
       <BrowserRouter>
       <div>
         <Navbar cart={this.state.cart.length}/>
-        <Route path='/' exact component={Homepage}/>
+        <Route path='/Homepage' exact><Homepage/></Route>
         <Route path='/products' exact >
          <Products  handelAddToCart={this.handelAddToCart}/> </Route>
         <Route path='/cart' exact>

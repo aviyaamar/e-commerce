@@ -4,9 +4,9 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                <h1>Wellcome to Home page</h1>
+                <p>wellcome to home page</p>
             </div>
         )
     }
 }
-export default  Homepage 
+export default Homepage 
